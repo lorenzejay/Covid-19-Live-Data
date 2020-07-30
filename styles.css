@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+}
+body {
+  background-image: url(./brett-zeck-eyfMgGvo9PA-unsplash.jpg);
+  background-size: 1280px;
+}
+
+.heading {
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 3rem;
+  color: #333333;
+}
+
+.update-btn {
+  margin: 0 auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh 0;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  border-radius: 5px;
+}
+.card:hover {
+  transform: scale(1.5);
+  transition: all 1s;
+}
+.total {
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.tcases {
+  border-bottom: 10px solid rgb(218, 44, 218);
+}
+.tdeath {
+  border-bottom: 10px solid greenyellow;
+}
+.trecovered {
+  border-bottom: 10px solid orangered;
+}
+
+.country-list {
+  display: grid;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh auto;
+  }
+  .country-list {
+    margin: 10vh auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+  }
+}
