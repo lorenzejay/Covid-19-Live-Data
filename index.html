@@ -10,34 +10,34 @@
     <title>Covid-19 Data</title>
   </head>
   <body>
-    <h1 class="heading">COVID-19 LIVE DATA</h1>
+    <h1 class="heading">COVID-19 STATS</h1>
 
     <section class="card-container">
       <div class="card tCases">
         <h2 class="card-title">Total Cases</h2>
         <div class="card-data">
-          <p class="total" id="total-cases">00000</p>
+          <p class="total type" id="total-cases">00000</p>
           <p class="description">Number of Total cases from Covid-19</p>
         </div>
       </div>
       <div class="card tDeath">
         <h2 class="card-title">Total Deaths</h2>
         <div class="card-data">
-          <p class="total" id="total-death">00000</p>
+          <p class="total type" id="total-death">00000</p>
           <p class="description">Number of total deaths from Covid-19</p>
         </div>
       </div>
-      <div class="card tRecovered">
-        <h2 class="card-title">Total Recovered</h2>
+      <div class="card tTodayCases">
+        <h2 class="card-title">Todays Cases</h2>
         <div class="card-data">
-          <p class="total" id="total-recovered">00000</p>
-          <p class="description">Number of total recovered from Covid-19</p>
+          <p class="total type" id="todays-cases">00000</p>
+          <p class="description">Number of cases of Covid-19 today</p>
         </div>
       </div>
     </section>
     <form>
       <select name="country" id="country-list" class="country-list" onchange="getCountry(this)">
-        <option value="">Choose a Country</option>
+        <option value="All Countries">All Countries</option>
       </select>
     </form>
     <script src="./covid.js"></script>
